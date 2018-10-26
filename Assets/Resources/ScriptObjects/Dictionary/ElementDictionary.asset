@@ -1,0 +1,278 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec21bb059356a2142bffd15fbe027669, type: 3}
+  m_Name: ElementDictionary
+  m_EditorClassIdentifier: 
+  allElements:
+  - elementName: Air
+    icon: {fileID: 21300000, guid: b24df75f7c7dcba4ab20fa33ddb0aa10, type: 3}
+    elementID: 0
+  - elementName: Earth
+    icon: {fileID: 21300000, guid: cf5c4f6af7359d649b9945946ead9fe7, type: 3}
+    elementID: 1
+  - elementName: Fire
+    icon: {fileID: 21300000, guid: 5a372c6ffb18c004d840be0e96ac06a7, type: 3}
+    elementID: 2
+  - elementName: Water
+    icon: {fileID: 21300000, guid: a9ffab60f70b115449e58b56e2358004, type: 3}
+    elementID: 3
+  - elementName: Knife
+    icon: {fileID: 21300000, guid: 257d5e51729ba514781ed6484fdb6ba6, type: 3}
+    elementID: 4
+  - elementName: Magical Power
+    icon: {fileID: 21300000, guid: 597090fc6f544f247b1b0fbfa2fa518f, type: 3}
+    elementID: 5
+  - elementName: Life
+    icon: {fileID: 21300000, guid: 274508b487e22d74aa6b7c05296c2c18, type: 3}
+    elementID: 6
+  - elementName: Metal
+    icon: {fileID: 21300000, guid: 6b994323883c47042949c1eb7efd5e20, type: 3}
+    elementID: 7
+  - elementName: Wing of Bat
+    icon: {fileID: 21300000, guid: 3af8974c8098ce94daa44fe2c9ea7990, type: 3}
+    elementID: 8
+  - elementName: Wine
+    icon: {fileID: 21300000, guid: c0d4104f6c6ac8a41a4bfb934ab626c2, type: 3}
+    elementID: 9
+  - elementName: Plant
+    icon: {fileID: 21300000, guid: 1d5ae0c02568c5f43aafa29308e85f6b, type: 3}
+    elementID: 10
+  - elementName: Horse
+    icon: {fileID: 21300000, guid: 79ec3efe5b76a8d4496588763499b339, type: 3}
+    elementID: 11
+  - elementName: Grass
+    icon: {fileID: 21300000, guid: cb4a9bade434f0e4894d6e5b09c944e1, type: 3}
+    elementID: 12
+  - elementName: Seashell
+    icon: {fileID: 21300000, guid: 710f3a408d486d14e8e7c34f585a92ab, type: 3}
+    elementID: 13
+  - elementName: Salt
+    icon: {fileID: 21300000, guid: a36afd70504368640a39f04ab6819249, type: 3}
+    elementID: 14
+  - elementName: Bloodstone
+    icon: {fileID: 21300000, guid: 5cbb786c2231a504e8223045d6c3cfa6, type: 3}
+    elementID: 15
+  - elementName: Dust
+    icon: {fileID: 21300000, guid: e997aac2de732b64ea4ae767666909f8, type: 3}
+    elementID: 16
+  - elementName: Blood
+    icon: {fileID: 21300000, guid: df13e0744ec331144bc4e205c3412fbd, type: 3}
+    elementID: 17
+  - elementName: Boiling Water
+    icon: {fileID: 21300000, guid: 7636df524766ce049b904aa67deab430, type: 3}
+    elementID: 18
+  - elementName: Feather
+    icon: {fileID: 21300000, guid: ccb3743a2f017304e98bdb86ada1936e, type: 3}
+    elementID: 19
+  - elementName: Eye
+    icon: {fileID: 21300000, guid: 85e38b0c359fbeb419057c41d14915a4, type: 3}
+    elementID: 20
+  - elementName: Honey
+    icon: {fileID: 21300000, guid: 2b4e2ea2fe0f6db4aa9c0704a1d04950, type: 3}
+    elementID: 21
+  - elementName: Stone
+    icon: {fileID: 21300000, guid: 6734174a6c81ed44fb6b4c0627696e20, type: 3}
+    elementID: 22
+  - elementName: Tray
+    icon: {fileID: 21300000, guid: f1acad8ea968958438d09d3ace44cf70, type: 3}
+    elementID: 23
+  - elementName: Tiny Tray
+    icon: {fileID: 21300000, guid: e4506c02ea5ca6d46a1503a6f509f891, type: 3}
+    elementID: 24
+  - elementName: Coin
+    icon: {fileID: 21300000, guid: f5ab725fe75daff4886d0bc7f15c567c, type: 3}
+    elementID: 25
+  - elementName: Silk
+    icon: {fileID: 21300000, guid: c8c6b15d3851dc148a171a6df15dc689, type: 3}
+    elementID: 26
+  - elementName: Candles
+    icon: {fileID: 21300000, guid: e1e6446c880f6d548acbd181b7410bd2, type: 3}
+    elementID: 27
+  - elementName: Bird
+    icon: {fileID: 21300000, guid: 305726193145e084fbb6da1c7cb1b72e, type: 3}
+    elementID: 28
+  - elementName: Mud
+    icon: {fileID: 21300000, guid: 1cc8ab134a0e5f24682ccb158f66183e, type: 3}
+    elementID: 29
+  - elementName: Clay
+    icon: {fileID: 21300000, guid: e6f2548b0842d59479cb1974d15f9884, type: 3}
+    elementID: 20
+  - elementName: Human
+    icon: {fileID: 21300000, guid: 3bf39f6ac72afd74f9a6b6a12134f083, type: 3}
+    elementID: 31
+  - elementName: Beast
+    icon: {fileID: 21300000, guid: cf8394d9cd854444eb1ba0be6fa6712e, type: 3}
+    elementID: 32
+  - elementName: Dragon
+    icon: {fileID: 21300000, guid: 18d68776069c2f74aa5c55fd28cf95dc, type: 3}
+    elementID: 33
+  - elementName: Heat
+    icon: {fileID: 21300000, guid: 66cb61d62513c7844a458fc5cbf093ed, type: 3}
+    elementID: 34
+  - elementName: Ocean
+    icon: {fileID: 21300000, guid: fc6a334812833fb49ae4a34a03336290, type: 3}
+    elementID: 35
+  - elementName: Moon
+    icon: {fileID: 21300000, guid: da046871f3c8d0c45a57e2e430be890c, type: 3}
+    elementID: 36
+  - elementName: Sky
+    icon: {fileID: 21300000, guid: 3c73c258581f1b54d9fdfbc08ef1e9b9, type: 3}
+    elementID: 37
+  - elementName: Cloud
+    icon: {fileID: 21300000, guid: 6cbe37a466885ff4da976567458df175, type: 3}
+    elementID: 38
+  - elementName: Sun
+    icon: {fileID: 21300000, guid: 114ec4d86f81af54c9bce4d67788fb89, type: 3}
+    elementID: 39
+  - elementName: Bee
+    icon: {fileID: 21300000, guid: 13b7a299575505b42be2faba6f1cf56f, type: 3}
+    elementID: 40
+  - elementName: Silkworm
+    icon: {fileID: 21300000, guid: da75f7b87bfffcf41bac4538d4cb3083, type: 3}
+    elementID: 41
+  - elementName: Gold
+    icon: {fileID: 21300000, guid: cca27bc92aa6ff342ae329fd39edc0a7, type: 3}
+    elementID: 42
+  - elementName: Mirror
+    icon: {fileID: 21300000, guid: 6caf9f2ed195f2647b147170b8ec7d6a, type: 3}
+    elementID: 43
+  - elementName: Farm
+    icon: {fileID: 21300000, guid: 5d1f038e6556fe742aadb1e8da3a4325, type: 3}
+    elementID: 44
+  - elementName: Mummy
+    icon: {fileID: 21300000, guid: b2c7dbfa0e2e8e24b8021975abba2ed4, type: 3}
+    elementID: 45
+  - elementName: Mummified Bat
+    icon: {fileID: 21300000, guid: 3688a05494177b14593f1e9b5e0d4f35, type: 3}
+    elementID: 46
+  - elementName: Mummified Bat Wing
+    icon: {fileID: 21300000, guid: db8b83c816b5ee44d9d46280fd971a83, type: 3}
+    elementID: 47
+  - elementName: Bat
+    icon: {fileID: 21300000, guid: 1f288100f90e706418f0de6ebc6474ac, type: 3}
+    elementID: 48
+  - elementName: Spider
+    icon: {fileID: 21300000, guid: ab6d726e16228cc449faf2e1b61fae3a, type: 3}
+    elementID: 49
+  - elementName: Spider Ichor
+    icon: {fileID: 21300000, guid: 6efd0e5f893791d41918472b5d89bce5, type: 3}
+    elementID: 50
+  - elementName: Rooster
+    icon: {fileID: 21300000, guid: bd6f57146ccaa014d8e4e14f42c044d9, type: 3}
+    elementID: 51
+  - elementName: Diamond
+    icon: {fileID: 21300000, guid: 184cfbca9ccde6f45a6fa16bdcd08e0d, type: 3}
+    elementID: 52
+  - elementName: Butterfly Wings
+    icon: {fileID: 21300000, guid: cc757263a3b413248ba01d49267b2cd1, type: 3}
+    elementID: 53
+  - elementName: Butterfly
+    icon: {fileID: 21300000, guid: de9c8d944ee94ff408c6d4ffea28305d, type: 3}
+    elementID: 54
+  - elementName: Flower
+    icon: {fileID: 21300000, guid: e312a13917db89244a3f62f0caa7f491, type: 3}
+    elementID: 55
+  - elementName: Horse Tail Hair
+    icon: {fileID: 21300000, guid: 65bbf7a69a3e864468adec1f5dcd2f9e, type: 3}
+    elementID: 56
+  - elementName: Brass Shards
+    icon: {fileID: 21300000, guid: 93ec7b6263d2bc847b17a7e18e920046, type: 3}
+    elementID: 57
+  - elementName: Sweat
+    icon: {fileID: 21300000, guid: 4ae21528b87118341b8eb765a4349401, type: 3}
+    elementID: 58
+  - elementName: Dragon's Scale
+    icon: {fileID: 21300000, guid: 31775f92c56dc9540a6bc425c66601d5, type: 3}
+    elementID: 59
+  - elementName: Dragon's Blood
+    icon: {fileID: 21300000, guid: e0d101bfbf93ab84c843bc614b5faef5, type: 3}
+    elementID: 60
+  - elementName: Wax
+    icon: {fileID: 21300000, guid: cbe18f839f4aa7d4383589db4a2ec674, type: 3}
+    elementID: 61
+  - elementName: Beast Pelt
+    icon: {fileID: 21300000, guid: 1a7ee80076312e34c813c0f1704dc15c, type: 3}
+    elementID: 62
+  - elementName: Hair
+    icon: {fileID: 21300000, guid: ede9d8c38f74e824b889a505a9fcc3a6, type: 3}
+    elementID: 63
+  - elementName: Beast Blood
+    icon: {fileID: 21300000, guid: fee974d9c9a4efc45bc1108d461f8c1d, type: 3}
+    elementID: 64
+  - elementName: Insect
+    icon: {fileID: 21300000, guid: eaf26b9a8883b28478c70f5813307a03, type: 3}
+    elementID: 65
+  - elementName: Plow
+    icon: {fileID: 21300000, guid: 77a9062fbc9f6b34eaf2b3f3d38a8174, type: 3}
+    elementID: 66
+  - elementName: Rooster's Toe
+    icon: {fileID: 21300000, guid: 474ee402bfec40a4a80145a8eb8a9066, type: 3}
+    elementID: 67
+  - elementName: Incense
+    icon: {fileID: 21300000, guid: 8cfc741be804bb9418ded4701e9cbbcb, type: 3}
+    elementID: 68
+  - elementName: Iron
+    icon: {fileID: 21300000, guid: c040af14242e2624db81aa160e156197, type: 3}
+    elementID: 69
+  - elementName: Steel
+    icon: {fileID: 21300000, guid: 6efb1b77d71d4cc44a51eebe966b64e0, type: 3}
+    elementID: 70
+  - elementName: Jewelweed
+    icon: {fileID: 21300000, guid: 0fd551ba5ce03a4468e9e83373370620, type: 3}
+    elementID: 71
+  - elementName: Collection of Stones
+    icon: {fileID: 21300000, guid: 44c9d639391c1ba4893d476e23938d8b, type: 3}
+    elementID: 72
+  - elementName: Chrysolite
+    icon: {fileID: 21300000, guid: 2baced33591b9c44c9951a5b2d7446c1, type: 3}
+    elementID: 73
+  - elementName: Brimstone
+    icon: {fileID: 21300000, guid: 6e59e67e0daed4f43a79efb41fd4275d, type: 3}
+    elementID: 74
+  - elementName: Sand
+    icon: {fileID: 21300000, guid: 4a6988c9e5d274e44b9037416080dd81, type: 3}
+    elementID: 75
+  - elementName: Black Sand
+    icon: {fileID: 21300000, guid: f0bef75d70a5d5d459f8f695d6766d09, type: 3}
+    elementID: 76
+  - elementName: Plant Seeds
+    icon: {fileID: 21300000, guid: 87a0a9746096f8a4ba607eab6c9d3576, type: 3}
+    elementID: 77
+  - elementName: Ash
+    icon: {fileID: 21300000, guid: 531f836889188a543b73fa518a7e1213, type: 3}
+    elementID: 78
+  - elementName: Scrying Stone
+    icon: {fileID: 21300000, guid: 8245b63acdfe7294392cd72225daf664, type: 3}
+    elementID: 79
+  - elementName: Glass
+    icon: {fileID: 21300000, guid: 56e0b35aaaa997d40a5f06e2516acd30, type: 3}
+    elementID: 80
+  - elementName: Empty Vial
+    icon: {fileID: 21300000, guid: 560a0be863b7700418acc851711fd1be, type: 3}
+    elementID: 81
+  - elementName: Tree
+    icon: {fileID: 21300000, guid: c31f1dbe97a53c346aae51579a947f8d, type: 3}
+    elementID: 82
+  - elementName: Pine Needles
+    icon: {fileID: 21300000, guid: e8bceb9b8282b214abc42af447905b5a, type: 3}
+    elementID: 83
+  - elementName: Lantern
+    icon: {fileID: 21300000, guid: 66c686fde608a5349b2e52f9e75efd87, type: 3}
+    elementID: 84
+  - elementName: Special Powders
+    icon: {fileID: 21300000, guid: 075b44e0446acca49aa9c0f1c57a679e, type: 3}
+    elementID: 85
+  - elementName: Black Dagger
+    icon: {fileID: 21300000, guid: 60ab24e58151d7541a41e5615f4439b9, type: 3}
+    elementID: 86
+  - elementName: Displaced Whistle
+    icon: {fileID: 21300000, guid: 4e7a192e0ef06674f9ba03df0a554162, type: 3}
+    elementID: 87

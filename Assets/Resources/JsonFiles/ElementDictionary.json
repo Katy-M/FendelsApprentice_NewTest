@@ -1,0 +1,8 @@
+{
+    "elements":[
+        "Elements/Air.json",
+        "Elements/Earth.json",
+        "Elements/Fire.json",
+        "Elements/Water.json"
+    ]
+}

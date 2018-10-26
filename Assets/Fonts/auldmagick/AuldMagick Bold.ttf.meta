@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e57125eb2855a1843b6e8e767c6a1cde
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: AuldMagick Bold
+  fontNames:
+  - AuldMagick Bold
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5be40eebf26beeb488c2a993f5d30aed, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
