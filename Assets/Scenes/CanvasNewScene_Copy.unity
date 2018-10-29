@@ -113,7 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &503445423
+--- !u!1001 &134464508
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -158,7 +158,7 @@ Prefab:
     - target: {fileID: 224826083397869938, guid: 1cce1d1e972aebd4aaf3283c0cb4ad0a,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224826083397869938, guid: 1cce1d1e972aebd4aaf3283c0cb4ad0a,
         type: 2}
@@ -322,7 +322,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &961970158
 MonoBehaviour:
@@ -423,5 +423,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

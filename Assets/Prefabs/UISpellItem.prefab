@@ -54,7 +54,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 20
-    m_MaxSize: 40
+    m_MaxSize: 35
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -125,6 +125,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 199.8775, y: -42.175}
-  m_SizeDelta: {x: 339.755, y: 54.35}
+  m_AnchoredPosition: {x: 242.63863, y: -36.335823}
+  m_SizeDelta: {x: 425.27725, y: 42.671646}
   m_Pivot: {x: 0.5, y: 0.5}
