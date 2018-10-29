@@ -15,6 +15,8 @@ public class DraggableElement : MonoBehaviour
 
     public ElementDictionary elDic;
 
+    public float hoverColorValue;   // the value to dim the alpha of the icons when they collide.
+
     SerializableDictionaryExample m_rContainer;
     bool canCollide = false;
 
@@ -41,7 +43,7 @@ public class DraggableElement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Image image = gameObject.GetComponent<Image>();
-        Color newColor = new Color(image.color.r, image.color.g, image.color.b, image.color.a - 0.2f);
+        Color newColor = new Color(image.color.r, image.color.g, image.color.b, image.color.a - hoverColorValue);
         image.color = newColor;
 
         if (gameObject.GetComponent<ElementDragHandler>().dragging == false)
@@ -62,20 +64,26 @@ public class DraggableElement : MonoBehaviour
 
             //Destroy(other.gameObject);
             Image image = other.gameObject.GetComponent<Image>();
-            Color newColor = new Color(image.color.r, image.color.g, image.color.b, image.color.a + 0.2f);
+            Color newColor = new Color(image.color.r, image.color.g, image.color.b, image.color.a + hoverColorValue);
             image.color = newColor;
 
 
             //RecipeDictionary d = new RecipeDictionary();	
 
             int elementIndex = IsValidRecipe(this, other.gameObject.GetComponent<DraggableElement>());
-            other.gameObject.GetComponent<DraggableElement>().image.sprite = elDic.allElements[elementIndex].icon;
-            other.gameObject.GetComponent<DraggableElement>().elementID = elDic.allElements[elementIndex].elementID;
-            other.gameObject.GetComponent<DraggableElement>().nameText.text = elDic.allElements[elementIndex].elementName;
-            other.gameObject.GetComponent<DraggableElement>().element = elDic.allElements[elementIndex];
 
+            if(!(elementIndex==-99))
+            {
+                other.gameObject.GetComponent<DraggableElement>().image.sprite = elDic.allElements[elementIndex].icon;
+                other.gameObject.GetComponent<DraggableElement>().elementID = elDic.allElements[elementIndex].elementID;
+                other.gameObject.GetComponent<DraggableElement>().nameText.text = elDic.allElements[elementIndex].elementName;
+                other.gameObject.GetComponent<DraggableElement>().element = elDic.allElements[elementIndex];
+                Destroy(this.gameObject);
+            }
+            
+            
             // check if this element has not been discovered
-            Debug.Log(elDic.allElements[elementIndex]);
+            //Debug.Log(elDic.allElements[elementIndex]);
            // if (!elDic.allElements[elementIndex].active)
            // {
            //     // set created element to active
@@ -95,7 +103,7 @@ public class DraggableElement : MonoBehaviour
            // }
 
 
-            Destroy(this.gameObject);
+            
         }
     }
 
@@ -107,7 +115,7 @@ public class DraggableElement : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         Image image = gameObject.GetComponent<Image>();
-        Color newColor = new Color(image.color.r, image.color.g, image.color.b, image.color.a + 0.2f);
+        Color newColor = new Color(image.color.r, image.color.g, image.color.b, image.color.a + hoverColorValue);
         image.color = newColor;
     }
 
@@ -119,7 +127,7 @@ public class DraggableElement : MonoBehaviour
 
         foreach (Pair v in m_rContainer.RecipeDictionary.Keys)
         {
-            if (v.first == p.first && v.second == p.second)
+            if ((v.first == p.first && v.second == p.second)||(v.first==p.second&&v.second==p.first))
             {
                 key = m_rContainer.RecipeDictionary[v];
                 break;

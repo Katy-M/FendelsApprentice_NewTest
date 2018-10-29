@@ -223,10 +223,12 @@ MonoBehaviour:
     elementName: 
     icon: {fileID: 0}
     elementID: 0
+    active: 0
+  elementID: 0
   nameText: {fileID: 114131916703786732}
   image: {fileID: 114772709510086744}
   elDic: {fileID: 11400000, guid: f8d1ecf6c491fcb44a7443c8e0d6ca83, type: 2}
-  elementID: 0
+  hoverColorValue: 0.4
 --- !u!114 &114717217681935018
 MonoBehaviour:
   m_ObjectHideFlags: 1
