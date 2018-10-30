@@ -79,7 +79,7 @@ MonoBehaviour:
   - elementName: Dust
     icon: {fileID: 21300000, guid: e997aac2de732b64ea4ae767666909f8, type: 3}
     elementID: 16
-    active: 0
+    active: 1
   - elementName: Blood
     icon: {fileID: 21300000, guid: df13e0744ec331144bc4e205c3412fbd, type: 3}
     elementID: 17
@@ -87,7 +87,7 @@ MonoBehaviour:
   - elementName: Boiling Water
     icon: {fileID: 21300000, guid: 7636df524766ce049b904aa67deab430, type: 3}
     elementID: 18
-    active: 0
+    active: 1
   - elementName: Feather
     icon: {fileID: 21300000, guid: ccb3743a2f017304e98bdb86ada1936e, type: 3}
     elementID: 19
@@ -103,7 +103,7 @@ MonoBehaviour:
   - elementName: Stone
     icon: {fileID: 21300000, guid: 6734174a6c81ed44fb6b4c0627696e20, type: 3}
     elementID: 22
-    active: 0
+    active: 1
   - elementName: Tray
     icon: {fileID: 21300000, guid: f1acad8ea968958438d09d3ace44cf70, type: 3}
     elementID: 23
@@ -131,15 +131,15 @@ MonoBehaviour:
   - elementName: Mud
     icon: {fileID: 21300000, guid: 1cc8ab134a0e5f24682ccb158f66183e, type: 3}
     elementID: 29
-    active: 0
+    active: 1
   - elementName: Clay
     icon: {fileID: 21300000, guid: e6f2548b0842d59479cb1974d15f9884, type: 3}
-    elementID: 20
-    active: 0
+    elementID: 30
+    active: 1
   - elementName: Human
     icon: {fileID: 21300000, guid: 3bf39f6ac72afd74f9a6b6a12134f083, type: 3}
     elementID: 31
-    active: 0
+    active: 1
   - elementName: Beast
     icon: {fileID: 21300000, guid: cf8394d9cd854444eb1ba0be6fa6712e, type: 3}
     elementID: 32
@@ -167,7 +167,7 @@ MonoBehaviour:
   - elementName: Cloud
     icon: {fileID: 21300000, guid: 6cbe37a466885ff4da976567458df175, type: 3}
     elementID: 38
-    active: 0
+    active: 1
   - elementName: Sun
     icon: {fileID: 21300000, guid: 114ec4d86f81af54c9bce4d67788fb89, type: 3}
     elementID: 39
@@ -303,7 +303,7 @@ MonoBehaviour:
   - elementName: Collection of Stones
     icon: {fileID: 21300000, guid: 44c9d639391c1ba4893d476e23938d8b, type: 3}
     elementID: 72
-    active: 0
+    active: 1
   - elementName: Chrysolite
     icon: {fileID: 21300000, guid: 2baced33591b9c44c9951a5b2d7446c1, type: 3}
     elementID: 73
