@@ -85,18 +85,36 @@ public class DraggableElement : MonoBehaviour
                     // set created element to active
                     elDic.allElements[elementIndex].active = true;
 
-                    // new discovery sound effect stuff goes here
-
-
                     // add element to UI inventory
                     PopulateGrid unlockedItems = FindObjectOfType<PopulateGrid>();
                     unlockedItems.AddItem(elementIndex);
+
+                    // check if beast pelt
+                    if (elementIndex == 62)
+                    {
+                        // set beast blood and hair to active
+                        elDic.allElements[63].active = true;
+                        unlockedItems.AddItem(63);
+                        elDic.allElements[64].active = true;
+                        unlockedItems.AddItem(64);
+                    }
+
+                    // new discovery sound effect stuff goes here
+
                 }
                 else
                 {
                     // regular discovery sound effect stuff goes here
 
                 }
+
+                // check if beast pelt
+                if (elementIndex == 62)
+                {
+                    // spawn beast blood and hair
+
+                }
+
                 Destroy(this.gameObject);
             }
         }

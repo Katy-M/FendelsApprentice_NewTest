@@ -3,7 +3,12 @@ guid: 3eceabc3812d61e49acde7197bc05296
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - nameText: {instanceID: 0}
+  - image: {instanceID: 0}
+  - elDic: {instanceID: 0}
+  - dragPrefab: {fileID: 1683468376907498, guid: 40684e8117ed5eb43a93dcbba9e80c83,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
