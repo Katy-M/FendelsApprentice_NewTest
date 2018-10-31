@@ -657,7 +657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1301707345532730
 GameObject:
   m_ObjectHideFlags: 1
@@ -1625,7 +1625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1712969831457376
 GameObject:
   m_ObjectHideFlags: 1
@@ -8567,7 +8567,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224562299436476342}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.7818689
+  m_Size: 0.5598337
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10644,7 +10644,7 @@ MonoBehaviour:
     spells.\n\nYou will have a list of all the known ingredients off to the side,
     starting with a few of the most common ones. You can click and drag these ingredients
     to their workbench to \u201Ccombine\u201D them, making spells and discovering
-    other ingredients in the process.\n\nYou can only choose ingredients to combine,
+    other ingredients in the process.\n\nYou can only choose two ingredients to combine,
     including copies of itself, at a time. When there is a spell that matches two
     ingredients, a new item is created for future creations. The game is over when
     you complete all of the spells from the spellbook."
@@ -13260,7 +13260,7 @@ RectTransform:
   m_Father: {fileID: 224181851615215558}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.21813112}
+  m_AnchorMin: {x: 0, y: 0.4401663}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -14095,7 +14095,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 20, y: -0.0000030203653}
-  m_SizeDelta: {x: -39.6, y: 510.9}
+  m_SizeDelta: {x: -39.6, y: 713.7}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224943643115000228
 RectTransform:
