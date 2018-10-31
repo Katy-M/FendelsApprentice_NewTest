@@ -28,7 +28,7 @@ public class UiItem : MonoBehaviour {
 
 	public void SpawnDragElement()
 	{
-		GameObject temp = Instantiate(dragPrefab,Vector3.zero,transform.rotation,GameObject.FindGameObjectWithTag("CameraCanvas").transform);
+		GameObject temp = Instantiate(dragPrefab,Vector3.zero,transform.rotation,GameObject.FindGameObjectWithTag("AllDragObjects").transform);
 	
 		temp.GetComponent<DraggableElement>().image.sprite = elements.allElements[elementID].icon;
 		temp.GetComponent<DraggableElement>().elementID = elements.allElements[elementID].elementID;
