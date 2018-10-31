@@ -20,9 +20,18 @@ public class DraggableElement : MonoBehaviour
     SerializableDictionaryExample m_rContainer;
     bool canCollide = false;
 
+    // reference to audio manager
+    private AudioManager audio;
+
+    // variable so we only play the noCombo sound once
+    private bool soundPlayed = false;
+
     void Awake()
     {
         m_rContainer = GameObject.FindGameObjectWithTag("RecipeContainer").GetComponent<SerializableDictionaryExample>();
+
+        // get AudioManager object
+        audio = GameObject.FindObjectOfType<AudioManager>();
     }
 
     /// <summary>
@@ -99,12 +108,13 @@ public class DraggableElement : MonoBehaviour
                         unlockedItems.AddItem(64);
                     }
 
-                    // new discovery sound effect stuff goes here
-
+                    // Play New discovery sound effect
+                    audio.PlayNewCombo();
                 }
                 else
                 {
-                    // regular discovery sound effect stuff goes here
+                    // play regular Combination sound effect
+                    audio.PlayCombo();
 
                 }
 
@@ -116,6 +126,15 @@ public class DraggableElement : MonoBehaviour
                 }
 
                 Destroy(this.gameObject);
+            }
+            else
+            {
+                // play no combo sound ONCE!!!
+                if(!soundPlayed)
+                {
+                    audio.PlayNoCombo();
+                    soundPlayed = true;
+                }
             }
         }
     }
@@ -130,6 +149,9 @@ public class DraggableElement : MonoBehaviour
         Image image = gameObject.GetComponent<Image>();
         Color newColor = new Color(image.color.r, image.color.g, image.color.b, image.color.a + hoverColorValue);
         image.color = newColor;
+
+        // reset soundPlayed
+        soundPlayed = false;
     }
 
 

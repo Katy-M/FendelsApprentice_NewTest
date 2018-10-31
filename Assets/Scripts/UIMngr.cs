@@ -102,6 +102,10 @@ public class UIMngr : MonoBehaviour
         hud.SetActive(true);
         options.SetActive(false);
         mainMenu.SetActive(false);
+
+        // get reference to music manager and switch music loop
+        MusicManager music = GameObject.FindObjectOfType<MusicManager>();
+        music.StartOne();
     }
 
     public void ToggleCredits(GameObject credits)
