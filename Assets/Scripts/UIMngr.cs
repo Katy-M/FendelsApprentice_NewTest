@@ -43,8 +43,11 @@ public class UIMngr : MonoBehaviour
     public GameObject overlay;
     public GameObject mainMenu;
     public GameObject spellBook;
+
+    public ElementDictionary elDic;
     private bool audioOn;
     private GameObject previous;
+    
 
 	// Use this for initialization
 	void Start ()
@@ -131,6 +134,23 @@ public class UIMngr : MonoBehaviour
             hud.SetActive(true);
             options.SetActive(false);
             overlay.SetActive(false);
+        }
+    }
+
+    public void ClearBoard()
+    {
+        GameObject[] allObjects = GameObject.FindGameObjectsWithTag("DraggableElement");
+        for(int i=0;i<allObjects.Length;i++)
+        {
+            Destroy(allObjects[i]);
+        }
+    }
+
+    public void ResetIcons()
+    {
+        for(int i =8;i<elDic.allElements.Count;i++)
+        {
+            elDic.allElements[i].active = false;
         }
     }
 

@@ -9,6 +9,7 @@ TagManager:
   - Trash
   - EventSystem
   - RecipeContainer
+  - AllDragObjects
   layers:
   - Default
   - TransparentFX
