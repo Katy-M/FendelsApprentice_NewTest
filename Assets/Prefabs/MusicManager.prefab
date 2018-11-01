@@ -147,7 +147,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9950b3ac74661f046921b7f69906e47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bg0: {fileID: 0}
-  bg1: {fileID: 0}
-  bg2: {fileID: 0}
+  bg0: {fileID: 8300000, guid: 18f7591d47283ef41a811e86c39cca0b, type: 3}
+  bg1: {fileID: 8300000, guid: 7526bd249b4c75342ad7ece1663d329e, type: 3}
+  bg2: {fileID: 8300000, guid: 1c8c52f916df4ce449ed35b8c5c7abc3, type: 3}
+  bg3: {fileID: 8300000, guid: db72fb12c54516b4c8868ed5dc225f3d, type: 3}
+  bg4: {fileID: 8300000, guid: 2a86f9921ca2f094999cbf1b159c24f5, type: 3}
+  bg5: {fileID: 8300000, guid: 45088b78d0462564997e02dc762f5f1a, type: 3}
+  bg6: {fileID: 8300000, guid: 247c68a0f0d325d43bf0ce104057b19d, type: 3}
+  bg7: {fileID: 8300000, guid: fd0e05adf58f76d418eaed373e826691, type: 3}
   volume: 5
