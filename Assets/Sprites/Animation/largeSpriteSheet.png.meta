@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: d30ee8fb2726a8d48af465848aec8108
+guid: 2a39f560f983ace48a7058abd9c1bb5f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: magicalBookWinSceneSmall_0
-    21300002: magicalBookWinSceneSmall_1
-    21300004: magicalBookWinSceneSmall_2
-    21300006: magicalBookWinSceneSmall_3
+    21300000: largeSpriteSheet_0
+    21300002: largeSpriteSheet_1
+    21300004: largeSpriteSheet_2
+    21300006: largeSpriteSheet_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -64,10 +64,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -75,10 +75,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -86,10 +86,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: magicalBookWinSceneSmall_0
+      name: largeSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2100
-        width: 1000
-        height: 700
+        y: 4200
+        width: 2000
+        height: 1400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +113,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb56e6a5aee64fb4d88d689278a14940
+      spriteID: 2b2809189413e7f48989e7cd7ffdb2ab
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magicalBookWinSceneSmall_1
+      name: largeSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 2000
+        height: 1400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002931922473fe348903a5edb02ddada
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: largeSpriteSheet_2
       rect:
         serializedVersion: 2
         x: 0
         y: 1400
-        width: 1000
-        height: 700
+        width: 2000
+        height: 1400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,39 +153,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ca43b523b8f69e4c8c12e10340a1716
+      spriteID: 816fcaf1afbc2db4186fa9cfd0db4780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: magicalBookWinSceneSmall_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 700
-        width: 1000
-        height: 700
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec21b2cbe46ba4d4da126f83ad4d7cab
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magicalBookWinSceneSmall_3
+      name: largeSpriteSheet_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1000
-        height: 700
+        width: 2000
+        height: 1400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,7 +173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14ea9be6df7ec6a43a8ce0e5f65e1c66
+      spriteID: 0d298f081b2213d45bbfcdbf6da390a3
       vertices: []
       indices: 
       edges: []
@@ -181,7 +181,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e8b3beedc657e30498ac34d2c9e04611
+    spriteID: f3e9198ee5cf37444a7432fc26ea6196
     vertices: []
     indices: 
     edges: []
