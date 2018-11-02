@@ -55,5 +55,15 @@ public class UiItem : MonoBehaviour {
         temp2.GetComponent<DraggableElement>().element = elements.allElements[64];
     }
 
-	
+    public void SpawnHumanItem()
+    {
+        GameObject temp = Instantiate(dragPrefab, new Vector3(3, 0, 0), transform.rotation, GameObject.FindGameObjectWithTag("AllDragObjects").transform);
+
+        temp.GetComponent<DraggableElement>().image.sprite = elements.allElements[20].icon;
+        temp.GetComponent<DraggableElement>().elementID = elements.allElements[20].elementID;
+        temp.GetComponent<DraggableElement>().nameText.text = elements.allElements[20].elementName;
+        temp.GetComponent<DraggableElement>().element = elements.allElements[20];
+    }
+
+
 }

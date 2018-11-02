@@ -113,6 +113,14 @@ public class DraggableElement : MonoBehaviour
                         unlockedItems.AddItem(64);
                     }
 
+                    // check if blood
+                    if (elementIndex == 17)
+                    {
+                        // set beast blood and hair to active
+                        elDic.allElements[20].active = true;
+                        unlockedItems.AddItem(20);
+                    }
+
                     // Play New discovery sound effect
                     audio.PlayCombo();
                 }
@@ -128,6 +136,13 @@ public class DraggableElement : MonoBehaviour
                 {
                     // spawn beast blood and hair
                     myItem.SpawnBeastItem();
+                }
+
+                // check if blood
+                if (elementIndex == 17)
+                {
+                    // spawn beast blood and hair
+                    myItem.SpawnHumanItem();
                 }
 
                 Destroy(this.gameObject);

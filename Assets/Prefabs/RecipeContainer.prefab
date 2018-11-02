@@ -63,7 +63,7 @@ MonoBehaviour:
       second: 44
     - first: 1
       second: 6
-    - first: 25
+    - first: 35
       second: 32
     - first: 35
       second: 34
@@ -104,7 +104,7 @@ MonoBehaviour:
     - first: 6
       second: 12
     - first: 32
-      second: 57
+      second: 59
     - first: 2
       second: 2
     - first: 3
@@ -141,7 +141,7 @@ MonoBehaviour:
       second: 4
     - first: 44
       second: 28
-    - first: 5
+    - first: 1
       second: 22
     - first: 54
       second: 4
@@ -157,14 +157,14 @@ MonoBehaviour:
       second: 34
     - first: 2
       second: 5
-    - first: 57
+    - first: 59
       second: 17
     - first: 40
       second: 21
     - first: 4
       second: 32
     - first: 12
-      second: 5
+      second: 32
     - first: 1
       second: 7
     - first: 51
@@ -184,7 +184,7 @@ MonoBehaviour:
     - first: 1
       second: 34
     - first: 22
-      second: 36
+      second: 35
     - first: 75
       second: 86
     - first: 10
