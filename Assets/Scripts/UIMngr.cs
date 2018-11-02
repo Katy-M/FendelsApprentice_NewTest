@@ -166,6 +166,9 @@ public class UIMngr : MonoBehaviour
             audioOn = false;
             MusicManager music = GameObject.FindObjectOfType<MusicManager>();
             music.GetComponent<AudioSource>().enabled = false;
+
+            AudioManager sounds = GameObject.FindObjectOfType<AudioManager>();
+            sounds.GetComponent<AudioSource>().enabled = false;
         }
         else
         {
@@ -173,6 +176,9 @@ public class UIMngr : MonoBehaviour
             buttonText.text = "On";
             MusicManager music = GameObject.FindObjectOfType<MusicManager>();
             music.GetComponent<AudioSource>().enabled = true;
+
+            AudioManager sounds = GameObject.FindObjectOfType<AudioManager>();
+            sounds.GetComponent<AudioSource>().enabled = true;
         }
     }
     #endregion
