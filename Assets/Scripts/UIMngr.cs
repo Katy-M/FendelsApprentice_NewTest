@@ -165,14 +165,14 @@ public class UIMngr : MonoBehaviour
             buttonText.text = "Off";
             audioOn = false;
             MusicManager music = GameObject.FindObjectOfType<MusicManager>();
-            music.volume = 0;
+            music.GetComponent<AudioSource>().enabled = false;
         }
         else
         {
             audioOn = true;
             buttonText.text = "On";
             MusicManager music = GameObject.FindObjectOfType<MusicManager>();
-            music.volume = 50;
+            music.GetComponent<AudioSource>().enabled = true;
         }
     }
     #endregion
