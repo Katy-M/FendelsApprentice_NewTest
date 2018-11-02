@@ -74,7 +74,7 @@ public class DraggableElementDisplay : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D other)
 	{
 		Image image = gameObject.GetComponent<Image>();
-		Color newColor = new Color(image.color.r,image.color.g,image.color.b,image.color.a+0.2f);
+		Color newColor = new Color(image.color.r,image.color.g,image.color.b,image.color.a + 0.2f);
 		image.color = newColor;
 	}
 

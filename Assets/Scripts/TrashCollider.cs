@@ -23,7 +23,6 @@ public class TrashCollider : MonoBehaviour {
 	/// <param name="other">The other Collider2D involved in this collision.</param>
 	void OnTriggerStay2D(Collider2D other)
 	{
-		Debug.Log("Hello");
 		if(other.gameObject.tag == "DraggableElement"&& other.gameObject.GetComponent<ElementDragHandler>().dragging ==false)
 		{
 			audio.PlayTrash();

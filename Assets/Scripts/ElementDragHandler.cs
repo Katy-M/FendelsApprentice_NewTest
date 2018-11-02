@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ElementDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler{
 
@@ -42,7 +43,11 @@ public class ElementDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler{
 		dragging = false;
 		//audio.PlaySetDown();
 		transform.position = lastPosition;
-	}
+        
+        Image image = gameObject.GetComponent<Image>();
+        Color newColor = new Color(image.color.r, image.color.g, image.color.b, 1);
+        image.color = newColor;
+    }
 	
 	// Update is called once per frame
 	void Update () {

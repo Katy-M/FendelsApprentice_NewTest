@@ -57,7 +57,7 @@ public class DraggableElement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         Image image = gameObject.GetComponent<Image>();
-        Color newColor = new Color(image.color.r, image.color.g, image.color.b, image.color.a - hoverColorValue);
+        Color newColor = new Color(image.color.r, image.color.g, image.color.b, 1 - hoverColorValue);
         image.color = newColor;
 
         if (gameObject.GetComponent<ElementDragHandler>().dragging == false)
@@ -78,7 +78,7 @@ public class DraggableElement : MonoBehaviour
 
             //Destroy(other.gameObject);
             Image image = other.gameObject.GetComponent<Image>();
-            Color newColor = new Color(image.color.r, image.color.g, image.color.b, image.color.a + hoverColorValue);
+            Color newColor = new Color(image.color.r, image.color.g, image.color.b, 1);
             image.color = newColor;
 
 
