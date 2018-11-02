@@ -26,12 +26,17 @@ public class DraggableElement : MonoBehaviour
     // variable so we only play the noCombo sound once
     private bool soundPlayed = false;
 
+    // ui item reference
+    UiItem myItem;
+
     void Awake()
     {
         m_rContainer = GameObject.FindGameObjectWithTag("RecipeContainer").GetComponent<SerializableDictionaryExample>();
 
         // get AudioManager object
         audio = GameObject.FindObjectOfType<AudioManager>();
+
+        myItem = GameObject.FindObjectOfType<UiItem>();
     }
 
     /// <summary>
@@ -122,7 +127,7 @@ public class DraggableElement : MonoBehaviour
                 if (elementIndex == 62)
                 {
                     // spawn beast blood and hair
-
+                    myItem.SpawnBeastItem();
                 }
 
                 Destroy(this.gameObject);
