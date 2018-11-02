@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TrashCollider : MonoBehaviour {
 
+	private AudioManager audio;
+
 	/// <summary>
 	/// Sent when another object enters a trigger collider attached to this
 	/// object (2D physics only).
@@ -24,7 +26,17 @@ public class TrashCollider : MonoBehaviour {
 		Debug.Log("Hello");
 		if(other.gameObject.tag == "DraggableElement"&& other.gameObject.GetComponent<ElementDragHandler>().dragging ==false)
 		{
+			audio.PlayTrash();
 			Destroy(other.gameObject);
 		}
+	}
+
+	/// <summary>
+	/// Awake is called when the script instance is being loaded.
+	/// </summary>
+	void Awake()
+	{
+		 // get AudioManager object
+        audio = GameObject.FindObjectOfType<AudioManager>();
 	}
 }

@@ -10,17 +10,24 @@ public class ElementDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler{
 
 	public bool dragging;
 
+	private AudioManager audio;
+
 	public /// <summary>
 	/// Awake is called when the script instance is being loaded.
 	/// </summary>
 	void Awake()
 	{
+		// get AudioManager object
+        audio = GameObject.FindObjectOfType<AudioManager>();
 		lastPosition = Vector3.zero;
 		dragging = false;
 		WorldCanvas = GameObject.FindGameObjectWithTag("CameraCanvas").GetComponent<Canvas>();
 	}
     public void OnDrag(PointerEventData eventData)
     {
+		if(dragging==false)
+			audio.PlayPickUp();
+
 		dragging = true;
 		Vector3 screenPoint = Input.mousePosition;
 		screenPoint.z = WorldCanvas.planeDistance;
@@ -33,6 +40,7 @@ public class ElementDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler{
 	public void OnEndDrag(PointerEventData eventData)
 	{
 		dragging = false;
+		//audio.PlaySetDown();
 		transform.position = lastPosition;
 	}
 	

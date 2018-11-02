@@ -4,19 +4,18 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class ElementDropHandler : MonoBehaviour, IDropHandler  {
+
+	private AudioManager audio;
+
     public void OnDrop(PointerEventData eventData)
     {
-        RectTransform elementPanel = transform as RectTransform;
-
-		if(!RectTransformUtility.RectangleContainsScreenPoint(elementPanel,Input.mousePosition))
-		{
-			Debug.Log("Drop it!");
-		}
+        audio.PlaySetDown();
     }
 
     // Use this for initialization
-    void Start () {
-		
+    void Awake () {
+		// get AudioManager object
+        audio = GameObject.FindObjectOfType<AudioManager>();
 	}
 	
 	// Update is called once per frame
