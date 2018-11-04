@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour {
 
     // volume to play at
     public float volume = 5;
+    public float pickUpVol = 2;
 
     // the audio source
     private AudioSource source;
@@ -46,13 +47,13 @@ public class AudioManager : MonoBehaviour {
     // play pick up sound (Item was picked up)
     public void PlayPickUp()
     {
-        source.PlayOneShot(pickUp, volume);
+        source.PlayOneShot(pickUp, pickUpVol);
     }
 
     // play set down sound (Item was placed down)
     public void PlaySetDown()
     {
-        source.PlayOneShot(setDown, volume);
+        source.PlayOneShot(setDown, pickUpVol);
     }
 
     // play trash sound (Item was trashed/deleted)
