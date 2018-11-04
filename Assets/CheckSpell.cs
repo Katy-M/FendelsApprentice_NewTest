@@ -55,14 +55,8 @@ public class CheckSpell : MonoBehaviour {
 				s.checkMark.SetActive(true);
 			}
 		}
-		if(elDic.allElements[elDic.allElements.Count-1].active==false)	// if athame is not discovered, you cannot make spells.
-		{
-			canCreateSpells = false;
-		}
-		else if(elDic.allElements[elDic.allElements.Count-1].active==true)
-		{
-			canCreateSpells=true;
-		}
+
+        canCreateSpells = true;
 
 	}
 
