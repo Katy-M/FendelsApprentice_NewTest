@@ -30,7 +30,7 @@ public class CheckSpell : MonoBehaviour {
 
 	public void ToggleCheckmark(int key)
 	{
-		if(canCreateSpells==false)
+		if(canCreateSpells==false && key != 88)
 			return;
 
 		foreach(Spell s in spells)
