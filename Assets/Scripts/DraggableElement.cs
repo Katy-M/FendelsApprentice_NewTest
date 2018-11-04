@@ -90,7 +90,7 @@ public class DraggableElement : MonoBehaviour
             int elementIndex = IsValidRecipe(this, other.gameObject.GetComponent<DraggableElement>());
            
             //when the a spell is casted destroy the ingredients 
-            if (elementIndex > 89)
+            if (elementIndex > 89 &&((elementIndex != 92) && ( elementIndex != 109)))
             {
                 Destroy(this.gameObject);
                 Destroy(other.gameObject);
