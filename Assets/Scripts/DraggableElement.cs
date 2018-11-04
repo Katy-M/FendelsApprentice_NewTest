@@ -14,6 +14,7 @@ public class DraggableElement : MonoBehaviour
     public Image image;
 
     public ElementDictionary elDic;
+    CheckSpell cSpell;
 
     public float hoverColorValue;   // the value to dim the alpha of the icons when they collide.
 
@@ -32,6 +33,7 @@ public class DraggableElement : MonoBehaviour
     void Awake()
     {
         m_rContainer = GameObject.FindGameObjectWithTag("RecipeContainer").GetComponent<SerializableDictionaryExample>();
+        cSpell = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<CheckSpell>();
 
         // get AudioManager object
         audio = GameObject.FindObjectOfType<AudioManager>();
@@ -84,9 +86,14 @@ public class DraggableElement : MonoBehaviour
 
             //RecipeDictionary d = new RecipeDictionary();	
 
+            // finds the index of the element created. Returns -99 if no recipe found.
             int elementIndex = IsValidRecipe(this, other.gameObject.GetComponent<DraggableElement>());
 
-            if(!(elementIndex==-99))
+            // unlock spell
+            cSpell.ToggleCheckmark(elementIndex);
+
+            // make sure valid element can be added (out of bounds)
+            if(elementIndex!=-99&&elementIndex<=89)
             {
                 other.gameObject.GetComponent<DraggableElement>().image.sprite = elDic.allElements[elementIndex].icon;
                 other.gameObject.GetComponent<DraggableElement>().elementID = elDic.allElements[elementIndex].elementID;
@@ -130,21 +137,18 @@ public class DraggableElement : MonoBehaviour
                     audio.PlayCombo();
 
                 }
-
                 // check if beast pelt
                 if (elementIndex == 62)
                 {
                     // spawn beast blood and hair
                     myItem.SpawnBeastItem();
                 }
-
                 // check if blood
                 if (elementIndex == 17)
                 {
                     // spawn beast blood and hair
                     myItem.SpawnHumanItem();
                 }
-
                 Destroy(this.gameObject);
             }
             else

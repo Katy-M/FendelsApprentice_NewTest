@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 ///<summary> Handles all the toggling of menus </summary>
 public class UIMngr : MonoBehaviour
@@ -156,6 +156,8 @@ public class UIMngr : MonoBehaviour
         {
             elDic.allElements[i].active = false;
         }
+        SceneManager.LoadScene(0);
+        
     }
 
     public void ToggleAudio(Text buttonText)
