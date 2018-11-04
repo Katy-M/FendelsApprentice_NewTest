@@ -37,8 +37,9 @@ public class CheckSpell : MonoBehaviour {
 		{
 			if(key==s.spellID)
 			{
-				//spellText.GetComponent<Timer>().timerOn=true;
+				spellText.GetComponent<Timer>().timerOn=true;
 				s.isChecked=true;
+
 			}
 		}
 	}
