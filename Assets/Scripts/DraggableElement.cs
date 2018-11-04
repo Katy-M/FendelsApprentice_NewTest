@@ -92,19 +92,20 @@ public class DraggableElement : MonoBehaviour
             // unlock spell
             cSpell.ToggleCheckmark(elementIndex);
 
-            // make sure valid element can be added (out of bounds)
-            if(elementIndex!=-99&&(elementIndex<89 || elementIndex == 92 || elementIndex == 109))
+            //if wine recipe is completed return the wine sprite
+            if (elementIndex == 92)
             {
-                //if wine recipe is completed return the wine sprite
-                if (elementIndex == 92)
-                {
-                    elementIndex = 9;
-                }
-                //shrinking spell is completed return a tiny tray
-                if (elementIndex == 109)
-                {
-                    elementIndex = 24;
-                }
+                elementIndex = 9;
+            }
+            //shrinking spell is completed return a tiny tray
+            else if (elementIndex == 109)
+            {
+                elementIndex = 24;
+            }
+
+            // make sure valid element can be added (out of bounds)
+            if (elementIndex!=-99&&elementIndex<89)
+            {
                 other.gameObject.GetComponent<DraggableElement>().image.sprite = elDic.allElements[elementIndex].icon;
                 other.gameObject.GetComponent<DraggableElement>().elementID = elDic.allElements[elementIndex].elementID;
                 other.gameObject.GetComponent<DraggableElement>().nameText.text = elDic.allElements[elementIndex].elementName;
@@ -129,9 +130,8 @@ public class DraggableElement : MonoBehaviour
                         elDic.allElements[64].active = true;
                         unlockedItems.AddItem(64);
                     }
-
                     // check if blood
-                    if (elementIndex == 17)
+                    else if (elementIndex == 17)
                     {
                         // set beast blood and hair to active
                         elDic.allElements[20].active = true;
@@ -154,9 +154,9 @@ public class DraggableElement : MonoBehaviour
                     myItem.SpawnBeastItem();
                 }
                 // check if blood
-                if (elementIndex == 17)
+                else if (elementIndex == 17)
                 {
-                    // spawn beast blood and hair
+                    // spawn human eye
                     myItem.SpawnHumanItem();
                 }
                 Destroy(this.gameObject);
