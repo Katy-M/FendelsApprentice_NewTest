@@ -88,9 +88,17 @@ public class DraggableElement : MonoBehaviour
 
             // finds the index of the element created. Returns -99 if no recipe found.
             int elementIndex = IsValidRecipe(this, other.gameObject.GetComponent<DraggableElement>());
+           
+            //when the a spell is casted destroy the ingredients 
+            if (elementIndex > 89)
+            {
+                Destroy(this.gameObject);
+                Destroy(other.gameObject);
+            }
 
             // unlock spell
             cSpell.ToggleCheckmark(elementIndex);
+
 
             //if wine recipe is completed return the wine sprite
             if (elementIndex == 92)
