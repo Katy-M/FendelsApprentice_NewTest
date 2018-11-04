@@ -620,6 +620,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1106137709825886
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224047360502803642}
+  - component: {fileID: 222415089437069114}
+  - component: {fileID: 114665752768556048}
+  m_Layer: 5
+  m_Name: firstIngrLabel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1106634733405488
 GameObject:
   m_ObjectHideFlags: 1
@@ -1373,7 +1390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1297510492060246
 GameObject:
   m_ObjectHideFlags: 1
@@ -1956,7 +1973,7 @@ GameObject:
   - component: {fileID: 222603206675406624}
   - component: {fileID: 114433940476925474}
   m_Layer: 5
-  m_Name: TitleText (1)
+  m_Name: secondIngrLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3640,6 +3657,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1805637552492654
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224047568016369218}
+  - component: {fileID: 222341528225294136}
+  - component: {fileID: 114771480683861662}
+  m_Layer: 5
+  m_Name: TitleText (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1806312742804890
 GameObject:
   m_ObjectHideFlags: 1
@@ -4281,7 +4315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1980470225089052
 GameObject:
   m_ObjectHideFlags: 1
@@ -4569,7 +4603,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -4614,6 +4648,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dragon's Blood
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Gold
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -5312,7 +5368,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -5358,6 +5414,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dragon's Scale
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Water
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114054532160378628
@@ -5399,7 +5477,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -5444,6 +5522,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Magical Power
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Knife
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -5662,7 +5762,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -5708,6 +5808,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Whistle
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Tiny Tray
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114065593574551268
@@ -5749,7 +5871,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -5795,6 +5917,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Hair
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Candle
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114068445830709380
@@ -5836,7 +5980,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -5880,6 +6024,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Metal
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Brimstone
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6161,7 +6327,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -6206,6 +6372,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Spider's Ichor
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Eye
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6617,7 +6805,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -6661,6 +6849,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Ash
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dust
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6751,7 +6961,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -6797,6 +7007,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bloodstone
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Special Powders
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -7637,7 +7869,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -7682,6 +7914,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Boiling Water
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Wine
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -8170,7 +8424,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -8215,6 +8469,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Coin
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Blood Vial
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -8314,7 +8590,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -8359,6 +8635,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Coin
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Magical Power
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -8495,7 +8793,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -8539,6 +8837,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dragon's Blood
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plant Seeds
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -8883,7 +9203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -8928,6 +9248,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Human
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mirror
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -9124,7 +9466,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -9169,6 +9511,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Beast Pelt
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Butterfly Wing
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -9302,7 +9666,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -9346,6 +9710,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Rooster Toe
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Empty Vial
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -9848,7 +10234,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -9895,6 +10281,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scrying Stone
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Iron
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114362410434866868
@@ -9936,7 +10344,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -9980,6 +10388,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Chrysolite
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Ash
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -10101,7 +10531,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -10145,6 +10575,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Diamond
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Steel
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -10653,7 +11105,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -10697,6 +11149,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Incense
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scrying Stone
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -10754,19 +11228,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5be40eebf26beeb488c2a993f5d30aed, type: 3}
-    m_FontSize: 45
+    m_Font: {fileID: 12800000, guid: 3767d39284cf6d24ca5ac66dfa49e66a, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 4
-    m_MaxSize: 60
+    m_MinSize: 20
+    m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Click on a spell to see its components.
+  m_Text: 
 --- !u!114 &114436929117739998
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11242,7 +11716,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -11286,6 +11760,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Blood Vial
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mummy
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -11798,7 +12294,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -11844,6 +12340,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Salt
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Beast Blood
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114507460949046496
@@ -11885,7 +12403,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -11929,6 +12447,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dragon's Blood
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mirror
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -12132,7 +12672,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -12179,6 +12719,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Pine Needles
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Flower
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114521646168652068
@@ -12220,7 +12782,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -12264,6 +12826,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Collection of Stones
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Incense
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -12972,7 +13556,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -13016,6 +13600,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Collection of Stones
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bird
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -13283,7 +13889,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -13327,6 +13933,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mummified Bat Wing
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Sweat
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -13557,8 +14185,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114815723189499520}
   m_HandleRect: {fileID: 224506378300366996}
   m_Direction: 2
-  m_Value: 0.89797854
-  m_Size: 0.22434945
+  m_Value: 1
+  m_Size: 0.22447208
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13803,7 +14431,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -13848,6 +14476,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Tray
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bat Wing
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -13924,7 +14574,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -13968,6 +14618,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Knife
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Fire
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -14141,6 +14813,39 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Haldane\u2019s Instantaneous Transformation"
+--- !u!114 &114665752768556048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106137709825886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3767d39284cf6d24ca5ac66dfa49e66a, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
 --- !u!114 &114667997528295762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14220,7 +14925,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -14264,6 +14969,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Candle
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Beast Pelt
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -14433,7 +15160,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -14478,6 +15205,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plant
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Human
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -14698,7 +15447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -14743,6 +15492,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Lantern
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Feather
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -14972,7 +15743,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -15016,6 +15787,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Seashell
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Grass
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -15363,6 +16156,39 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114771480683861662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805637552492654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 5be40eebf26beeb488c2a993f5d30aed, type: 3}
+    m_FontSize: 45
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 4
+    m_MaxSize: 60
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Click on a spell to see its components.
 --- !u!114 &114771970398141046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15608,7 +16434,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -15652,6 +16478,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dust
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mirror
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -16006,7 +16854,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -16050,6 +16898,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Blood Vial
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Sweat
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -16364,7 +17234,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -16408,6 +17278,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Boiling Water
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Jewelweed
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -16945,7 +17837,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -16990,6 +17882,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Honey
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Fire
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -17156,7 +18070,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -17202,6 +18116,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Brimstone
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Special Powders
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114941978771766100
@@ -17243,7 +18179,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -17288,6 +18224,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Human
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Black Sand
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -17671,7 +18629,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114433940476925474}
+      - m_Target: {fileID: 114771480683861662}
         m_MethodName: set_text
         m_Mode: 5
         m_Arguments:
@@ -17716,6 +18674,28 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114665752768556048}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Salt
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114433940476925474}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mummified Bat Wing
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -18395,6 +19375,13 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1826990956428826}
   m_CullTransparentMesh: 0
+--- !u!222 &222341528225294136
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805637552492654}
+  m_CullTransparentMesh: 0
 --- !u!222 &222343434692721924
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -18471,6 +19458,13 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1865998005204364}
+  m_CullTransparentMesh: 0
+--- !u!222 &222415089437069114
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106137709825886}
   m_CullTransparentMesh: 0
 --- !u!222 &222426462459345628
 CanvasRenderer:
@@ -19371,8 +20365,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -250.55504}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -250.55496}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224001686990425164
 RectTransform:
@@ -19390,8 +20384,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1464.725}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1464.725}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224001986502743514
 RectTransform:
@@ -19409,8 +20403,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -725.66516}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -725.6648}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224012141070211566
 RectTransform:
@@ -19449,8 +20443,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -303.34503}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -303.34494}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224027290639216242
 RectTransform:
@@ -19528,8 +20522,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -620.0851}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -620.08484}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224030110784380628
 RectTransform:
@@ -19542,6 +20536,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224964865090864572}
+  - {fileID: 224047360502803642}
+  - {fileID: 224273593181776784}
   m_Father: {fileID: 224164896115426746}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19602,9 +20598,27 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.049999}
+  m_AnchoredPosition: {x: -25.100037, y: -7.0499973}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
+--- !u!224 &224047360502803642
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106137709825886}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0001593, y: 1.0001593, z: 1.0001593}
+  m_Children: []
+  m_Father: {fileID: 224030110784380628}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -108.7, y: 80.79999}
+  m_SizeDelta: {x: -332.58, y: 35.350006}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224047528310280974
 RectTransform:
   m_ObjectHideFlags: 1
@@ -19622,6 +20636,24 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000005722046, y: -0.000011444092}
   m_SizeDelta: {x: -0.29999924, y: -0.20000076}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224047568016369218
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805637552492654}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000124, y: 1.0000124, z: 1.0000124}
+  m_Children: []
+  m_Father: {fileID: 224600575842697936}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.11999512, y: 240.95001}
+  m_SizeDelta: {x: 0.2000122, y: -518.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224061703508578102
 RectTransform:
@@ -19717,8 +20749,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1781.466}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1781.4652}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224088105435300608
 RectTransform:
@@ -19790,8 +20822,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1834.256}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1834.2552}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224107069097250956
 RectTransform:
@@ -19903,8 +20935,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1253.5656}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1253.5648}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224117872274766316
 RectTransform:
@@ -19978,8 +21010,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1095.1954}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1095.1947}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224130408437943952
 RectTransform:
@@ -20073,8 +21105,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1306.3556}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1306.3549}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224164896115426746
 RectTransform:
@@ -20168,8 +21200,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1517.515}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1517.515}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224184084299325406
 RectTransform:
@@ -20319,8 +21351,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 245.5888, y: -261.1646}
-  m_SizeDelta: {x: 491.1776, y: 398.10974}
+  m_AnchoredPosition: {x: 245.60336, y: -261.3612}
+  m_SizeDelta: {x: 491.20673, y: 398.2408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224205852645058692
 RectTransform:
@@ -20414,8 +21446,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -461.7151}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -461.71487}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224212454433682478
 RectTransform:
@@ -20743,15 +21775,15 @@ RectTransform:
   m_GameObject: {fileID: 1408479790966424}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000124, y: 1.0000124, z: 1.0000124}
+  m_LocalScale: {x: 1.0001593, y: 1.0001593, z: 1.0001593}
   m_Children: []
-  m_Father: {fileID: 224600575842697936}
-  m_RootOrder: 0
+  m_Father: {fileID: 224030110784380628}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.11999512, y: 240.95001}
-  m_SizeDelta: {x: 0.2000122, y: -518.9}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 111, y: 80.79999}
+  m_SizeDelta: {x: -332.58002, y: 35.350037}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224304896561296120
 RectTransform:
@@ -20769,8 +21801,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1200.7755}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1200.7748}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224305464363406498
 RectTransform:
@@ -20844,8 +21876,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1570.3058}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1570.305}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224318215663718182
 RectTransform:
@@ -20882,8 +21914,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -197.76503}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -197.76497}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224333922126532762
 RectTransform:
@@ -20995,8 +22027,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -92.18501}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -92.18499}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224344189634719430
 RectTransform:
@@ -21014,7 +22046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.0499935}
+  m_AnchoredPosition: {x: -25.100037, y: -7.0499954}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224346457354019202
@@ -21034,8 +22066,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 267.10876, y: -287.2347}
-  m_SizeDelta: {x: 514.2175, y: 554.4694}
+  m_AnchoredPosition: {x: 267.12332, y: -287.36578}
+  m_SizeDelta: {x: 514.24664, y: 554.73157}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224348187563142278
 RectTransform:
@@ -21110,8 +22142,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1359.1456}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1359.1449}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224375990904383190
 RectTransform:
@@ -21222,8 +22254,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1887.046}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1887.0453}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224411149327138570
 RectTransform:
@@ -21298,8 +22330,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -356.13507}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -356.13492}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224422066432603152
 RectTransform:
@@ -21373,8 +22405,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1411.9357}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1411.9349}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224446177486434190
 RectTransform:
@@ -21429,8 +22461,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1623.0958}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1623.0951}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224456460479277352
 RectTransform:
@@ -21448,8 +22480,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1147.9855}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1147.9847}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224457646483093496
 RectTransform:
@@ -21486,8 +22518,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -884.0353}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -884.0347}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224459923728141732
 RectTransform:
@@ -21617,7 +22649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.049999}
+  m_AnchoredPosition: {x: -25.100037, y: -7.0499973}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!224 &224475789868206520
@@ -21654,8 +22686,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -408.92505}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -408.9249}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224480879702143942
 RectTransform:
@@ -21729,8 +22761,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -2098.206}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -2098.2053}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224501505303656918
 RectTransform:
@@ -21766,8 +22798,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -39.395004}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -39.394997}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224506378300366996
 RectTransform:
@@ -21782,8 +22814,8 @@ RectTransform:
   m_Father: {fileID: 224446177486434190}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6965175}
-  m_AnchorMax: {x: 1, y: 0.92086697}
+  m_AnchorMin: {x: 0, y: 0.77552795}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -21876,8 +22908,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -144.97502}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -144.97498}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224522125742492070
 RectTransform:
@@ -22065,7 +23097,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.000039445047, y: 648.7241}
+  m_AnchoredPosition: {x: 0.000039445047, y: 479.83145}
   m_SizeDelta: {x: 0, y: 2137.6}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224560910883717882
@@ -22084,8 +23116,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1992.6261}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1992.6254}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224561967291485068
 RectTransform:
@@ -22103,8 +23135,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -567.2951}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -567.29486}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224562299436476342
 RectTransform:
@@ -22217,7 +23249,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.050001}
+  m_AnchoredPosition: {x: -25.100037, y: -7.050003}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!224 &224578413899689254
@@ -22255,8 +23287,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 245.58879, y: -199.05487}
-  m_SizeDelta: {x: 22.644325, y: 298.10974}
+  m_AnchoredPosition: {x: 245.60336, y: -199.1204}
+  m_SizeDelta: {x: 22.54721, y: 298.2408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224582096663091786
 RectTransform:
@@ -22311,8 +23343,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -831.24524}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -831.24475}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224598849755823454
 RectTransform:
@@ -22342,15 +23374,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.999989, y: 0.999989, z: 0.999989}
   m_Children:
-  - {fileID: 224273593181776784}
+  - {fileID: 224047568016369218}
   - {fileID: 224164896115426746}
   m_Father: {fileID: 224210301357125226}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 785.3263, y: -287.2347}
-  m_SizeDelta: {x: 514.2175, y: 554.4694}
+  m_AnchoredPosition: {x: 785.37, y: -287.36578}
+  m_SizeDelta: {x: 514.24664, y: 554.73157}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224606841172256212
 RectTransform:
@@ -22387,8 +23419,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -514.50507}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -514.5049}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224610250812820974
 RectTransform:
@@ -22535,7 +23567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.049999}
+  m_AnchoredPosition: {x: -25.100037, y: -7.0499973}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!224 &224642134064718588
@@ -22665,8 +23697,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -936.8253}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -936.8247}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224668752056937262
 RectTransform:
@@ -22866,8 +23898,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 349.04425, y: -199.05487}
-  m_SizeDelta: {x: 184.26663, y: 298.10974}
+  m_AnchoredPosition: {x: 349.04184, y: -199.1204}
+  m_SizeDelta: {x: 184.32976, y: 298.2408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224697909431785144
 RectTransform:
@@ -22885,8 +23917,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -989.6147}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -989.6147}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224701510809365590
 RectTransform:
@@ -22922,7 +23954,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.049999}
+  m_AnchoredPosition: {x: -25.100037, y: -7.0499973}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!224 &224704607034086052
@@ -23033,7 +24065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.049999}
+  m_AnchoredPosition: {x: -25.100037, y: -7.0499973}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!224 &224715322142640772
@@ -23223,8 +24255,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1728.6759}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1728.6752}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224753546896026978
 RectTransform:
@@ -23261,8 +24293,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1939.836}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1939.8353}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224758822643617386
 RectTransform:
@@ -23300,8 +24332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -778.4552}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -778.4548}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224775730554736450
 RectTransform:
@@ -23337,8 +24369,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1042.4054}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1042.4047}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224792266656801166
 RectTransform:
@@ -23519,7 +24551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.049999}
+  m_AnchoredPosition: {x: -25.100037, y: -7.0499973}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!224 &224847353086209300
@@ -23613,8 +24645,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -1675.8859}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -1675.8851}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224872391509795960
 RectTransform:
@@ -23727,7 +24759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.049999}
+  m_AnchoredPosition: {x: -25.100037, y: -7.0499973}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!224 &224893359363295024
@@ -23876,8 +24908,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -2045.4161}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -2045.4154}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224948325898944572
 RectTransform:
@@ -23894,8 +24926,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 142.13332, y: -199.05487}
-  m_SizeDelta: {x: 184.26663, y: 298.10974}
+  m_AnchoredPosition: {x: 142.16489, y: -199.1204}
+  m_SizeDelta: {x: 184.32976, y: 298.2408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224950762003315284
 RectTransform:
@@ -23913,7 +24945,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.049902}
+  m_AnchoredPosition: {x: -25.100037, y: -7.049904}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!224 &224957515978559104
@@ -23968,8 +25000,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.5688, y: -672.8751}
-  m_SizeDelta: {x: 385.13754, y: 48.79001}
+  m_AnchoredPosition: {x: 262.5833, y: -672.8748}
+  m_SizeDelta: {x: 385.16666, y: 48.78999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224964865090864572
 RectTransform:
@@ -23988,7 +25020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000022795966, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0.000013362214, y: 0}
   m_SizeDelta: {x: 0, y: -0}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224969641824384416
@@ -24044,7 +25076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.049999}
+  m_AnchoredPosition: {x: -25.100037, y: -7.0499973}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!224 &224975345082909852
@@ -24063,7 +25095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -25.100037, y: -7.050001}
+  m_AnchoredPosition: {x: -25.100037, y: -7.050003}
   m_SizeDelta: {x: 33.85, y: -14.099998}
   m_Pivot: {x: 0.5, y: 0.49999976}
 --- !u!224 &224976145019263196
@@ -24101,8 +25133,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 245.5888, y: -36.05487}
-  m_SizeDelta: {x: 491.1776, y: 52.10974}
+  m_AnchoredPosition: {x: 245.60336, y: -36.120407}
+  m_SizeDelta: {x: 491.20673, y: 52.240814}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224983101174750050
 RectTransform:
