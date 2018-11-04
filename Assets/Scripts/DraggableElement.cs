@@ -93,8 +93,18 @@ public class DraggableElement : MonoBehaviour
             cSpell.ToggleCheckmark(elementIndex);
 
             // make sure valid element can be added (out of bounds)
-            if(elementIndex!=-99&&elementIndex<89)
+            if(elementIndex!=-99&&(elementIndex<89 || elementIndex == 92 || elementIndex == 109))
             {
+                //if wine recipe is completed return the wine sprite
+                if (elementIndex == 92)
+                {
+                    elementIndex = 9;
+                }
+                //shrinking spell is completed return a tiny tray
+                if (elementIndex == 109)
+                {
+                    elementIndex = 24;
+                }
                 other.gameObject.GetComponent<DraggableElement>().image.sprite = elDic.allElements[elementIndex].icon;
                 other.gameObject.GetComponent<DraggableElement>().elementID = elDic.allElements[elementIndex].elementID;
                 other.gameObject.GetComponent<DraggableElement>().nameText.text = elDic.allElements[elementIndex].elementName;
