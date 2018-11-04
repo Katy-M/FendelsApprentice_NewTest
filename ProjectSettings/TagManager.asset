@@ -10,6 +10,9 @@ TagManager:
   - EventSystem
   - RecipeContainer
   - AllDragObjects
+  - Spell
+  - Checkbox
+  - SpellContent
   layers:
   - Default
   - TransparentFX
