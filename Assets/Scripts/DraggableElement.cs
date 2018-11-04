@@ -93,7 +93,7 @@ public class DraggableElement : MonoBehaviour
             cSpell.ToggleCheckmark(elementIndex);
 
             // make sure valid element can be added (out of bounds)
-            if(elementIndex!=-99&&elementIndex<=89)
+            if(elementIndex!=-99&&elementIndex<89)
             {
                 other.gameObject.GetComponent<DraggableElement>().image.sprite = elDic.allElements[elementIndex].icon;
                 other.gameObject.GetComponent<DraggableElement>().elementID = elDic.allElements[elementIndex].elementID;
