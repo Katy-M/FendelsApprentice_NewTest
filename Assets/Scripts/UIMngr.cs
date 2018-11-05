@@ -44,6 +44,7 @@ public class UIMngr : MonoBehaviour
     public GameObject mainMenu;
     public GameObject spellBook;
     public GameObject winScreen;
+    public GameObject deskTexture;
 
     public ElementDictionary elDic;
     public SpellSOList spellCheckmarks;
@@ -149,7 +150,7 @@ public class UIMngr : MonoBehaviour
         if(hud.activeSelf)
         {
             hud.SetActive(false);
-            overlay.SetActive(true);
+            deskTexture.SetActive(false);
             winScreen.SetActive(true);
         }
     }
