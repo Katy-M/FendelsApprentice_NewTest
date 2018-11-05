@@ -43,8 +43,10 @@ public class UIMngr : MonoBehaviour
     public GameObject overlay;
     public GameObject mainMenu;
     public GameObject spellBook;
+    public GameObject winScreen;
 
     public ElementDictionary elDic;
+    public SpellSOList spellCheckmarks;
     private bool audioOn;
     private GameObject previous;
     
@@ -56,6 +58,7 @@ public class UIMngr : MonoBehaviour
         hud.SetActive(false);
         options.SetActive(false);
         spellBook.SetActive(false);
+        winScreen.SetActive(false);
         audioOn = true;
     }
 
@@ -141,6 +144,16 @@ public class UIMngr : MonoBehaviour
         }
     }
 
+    public void ToggleWinScreen()
+    {
+        if(hud.activeSelf)
+        {
+            hud.SetActive(false);
+            overlay.SetActive(true);
+            winScreen.SetActive(true);
+        }
+    }
+
     public void ClearBoard()
     {
         GameObject[] allObjects = GameObject.FindGameObjectsWithTag("DraggableElement");
@@ -155,6 +168,10 @@ public class UIMngr : MonoBehaviour
         for(int i =8;i<elDic.allElements.Count;i++)
         {
             elDic.allElements[i].active = false;
+        }
+        foreach(SpellSO s in spellCheckmarks.spellCheckmarks)
+        {
+            s.isChecked=false;
         }
         SceneManager.LoadScene(0);
         

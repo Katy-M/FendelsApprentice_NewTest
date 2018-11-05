@@ -147,7 +147,7 @@ public class DraggableElement : MonoBehaviour
                     }
 
                     // Play New discovery sound effect
-                    audio.PlayCombo();
+                    audio.PlayNewCombo();
                 }
                 else
                 {

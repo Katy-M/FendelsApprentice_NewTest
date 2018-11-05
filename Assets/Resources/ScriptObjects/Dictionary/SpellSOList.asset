@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14eb7d436cc9fc0419c0eef847f9d6de, type: 3}
+  m_Name: SpellSOList
+  m_EditorClassIdentifier: 
+  spellCheckmarks:
+  - spellID: 88
+    isChecked: 1
+  - spellID: 86
+    isChecked: 1
+  - spellID: 87
+    isChecked: 1
+  - spellID: 90
+    isChecked: 1
+  - spellID: 91
+    isChecked: 1
+  - spellID: 92
+    isChecked: 1
+  - spellID: 93
+    isChecked: 1
+  - spellID: 94
+    isChecked: 1
+  - spellID: 95
+    isChecked: 1
+  - spellID: 96
+    isChecked: 1
+  - spellID: 97
+    isChecked: 1
+  - spellID: 98
+    isChecked: 1
+  - spellID: 99
+    isChecked: 1
+  - spellID: 100
+    isChecked: 1
+  - spellID: 101
+    isChecked: 1
+  - spellID: 102
+    isChecked: 1
+  - spellID: 103
+    isChecked: 1
+  - spellID: 104
+    isChecked: 1
+  - spellID: 105
+    isChecked: 1
+  - spellID: 106
+    isChecked: 1
+  - spellID: 107
+    isChecked: 1
+  - spellID: 108
+    isChecked: 1
+  - spellID: 109
+    isChecked: 1
+  - spellID: 110
+    isChecked: 1
+  - spellID: 111
+    isChecked: 1
+  - spellID: 112
+    isChecked: 1
+  - spellID: 113
+    isChecked: 1
+  - spellID: 114
+    isChecked: 1
+  - spellID: 115
+    isChecked: 1
+  - spellID: 116
+    isChecked: 1
+  - spellID: 89
+    isChecked: 1
+  - spellID: 117
+    isChecked: 1
+  - spellID: 118
+    isChecked: 1
+  - spellID: 119
+    isChecked: 1
+  - spellID: 120
+    isChecked: 1
+  - spellID: 121
+    isChecked: 1
+  - spellID: 122
+    isChecked: 1
+  - spellID: 123
+    isChecked: 1
+  - spellID: 124
+    isChecked: 1
+  - spellID: 125
+    isChecked: 0

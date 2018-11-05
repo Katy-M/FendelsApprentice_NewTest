@@ -8,10 +8,15 @@ public class CheckSpell : MonoBehaviour {
 
 	public ElementDictionary elDic;
 
-	public GameObject spellText;	// text appears upon discovery of spell.
+	public SpellSOList spellCheckmarks;
 
-	public bool canCreateSpells;	// false if player has not created the athame yet.
-	// Use this for initialization
+	// text appears upon discovery of spell.
+	public GameObject spellText;	
+
+	// false if player has not created the athame yet.
+	public bool canCreateSpells;	
+
+	
 	
 	// checks if the spell is unlocked and toggles the visibility on the checkmark.
 	// returns true if a spell was unlocked.
@@ -37,8 +42,10 @@ public class CheckSpell : MonoBehaviour {
 		{
 			if(key==s.spellID)
 			{
-				spellText.GetComponent<Timer>().timerOn=true;
+				if(s.isChecked==false)
+					spellText.GetComponent<Timer>().timerOn=true;
 				s.isChecked=true;
+				spellCheckmarks.spellCheckmarks[s.SpellIndex].isChecked=true;
 
 			}
 		}
@@ -67,5 +74,18 @@ public class CheckSpell : MonoBehaviour {
 		{
 			s.isChecked = false;
 		}
+	}
+
+	public bool CheckAllUnlocked()
+	{
+		bool checkE =true;
+		for(int i=0;i<spellCheckmarks.spellCheckmarks.Count;i++)
+		{
+			if(spellCheckmarks.spellCheckmarks[i].isChecked==false)
+				checkE = false;
+		}
+			
+		
+		return checkE;
 	}
 }

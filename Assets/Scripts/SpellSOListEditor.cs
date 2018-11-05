@@ -2,56 +2,56 @@
 using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
-public class ElementDictionaryEditor : EditorWindow {
+public class SpellSOListEditor : EditorWindow {
 
-	public ElementDictionary elementDictionary;
+	public SpellSOList spellSOList;
     private int viewIndex = 1;
     
-    [MenuItem ("Window/Element Dictionary Editor %#e")]
+    [MenuItem ("Window/Spell SO List Editor %#e")]
     static void  Init () 
     {
-        EditorWindow.GetWindow (typeof (ElementDictionaryEditor));
+        EditorWindow.GetWindow (typeof (SpellSOListEditor));
     }
     
     void  OnEnable () {
         if(EditorPrefs.HasKey("ObjectPath")) 
         {
             string objectPath = EditorPrefs.GetString("ObjectPath");
-            elementDictionary = AssetDatabase.LoadAssetAtPath (objectPath, typeof(ElementDictionary)) as ElementDictionary;
+            spellSOList = AssetDatabase.LoadAssetAtPath (objectPath, typeof(SpellSOList)) as SpellSOList;
         }
         
     }
     
     void  OnGUI () {
         GUILayout.BeginHorizontal ();
-        GUILayout.Label ("Element Dictionary Editor", EditorStyles.boldLabel);
-        if (elementDictionary != null) {
-            if (GUILayout.Button("Show Element Dictionary")) 
+        GUILayout.Label ("Spell SOList Editor", EditorStyles.boldLabel);
+        if (spellSOList != null) {
+            if (GUILayout.Button("Show Spell SO List")) 
             {
                 EditorUtility.FocusProjectWindow();
-                Selection.activeObject = elementDictionary;
+                Selection.activeObject = spellSOList;
             }
         }
-        if (GUILayout.Button("Open Element Dictionary")) 
+        if (GUILayout.Button("Open Spell SO List")) 
         {
                 OpenItemList();
         }
-        if (GUILayout.Button("New Element Dictionary")) 
+        if (GUILayout.Button("New Spell SO List")) 
         {
             EditorUtility.FocusProjectWindow();
-            Selection.activeObject = elementDictionary;
+            Selection.activeObject = spellSOList;
         }
         GUILayout.EndHorizontal ();
         
-        if (elementDictionary == null) 
+        if (spellSOList == null) 
         {
             GUILayout.BeginHorizontal ();
             GUILayout.Space(10);
-            if (GUILayout.Button("Create New Element Dictionary", GUILayout.ExpandWidth(false))) 
+            if (GUILayout.Button("Create New Spell SO List", GUILayout.ExpandWidth(false))) 
             {
                 CreateNewItemList();
             }
-            if (GUILayout.Button("Open Existing Element Dictionary", GUILayout.ExpandWidth(false))) 
+            if (GUILayout.Button("Open Existing Spell SO List", GUILayout.ExpandWidth(false))) 
             {
                 OpenItemList();
             }
@@ -60,7 +60,7 @@ public class ElementDictionaryEditor : EditorWindow {
             
             GUILayout.Space(20);
             
-        if (elementDictionary != null) 
+        if (spellSOList != null) 
         {
             GUILayout.BeginHorizontal ();
             
@@ -74,7 +74,7 @@ public class ElementDictionaryEditor : EditorWindow {
             GUILayout.Space(5);
             if (GUILayout.Button("Next", GUILayout.ExpandWidth(false))) 
             {
-                if (viewIndex < elementDictionary.allElements.Count) 
+                if (viewIndex < spellSOList.spellCheckmarks.Count) 
                 {
                     viewIndex ++;
                 }
@@ -92,20 +92,18 @@ public class ElementDictionaryEditor : EditorWindow {
             }
             
             GUILayout.EndHorizontal ();
-            if (elementDictionary.allElements == null)
+            if (spellSOList.spellCheckmarks == null)
                 Debug.Log("wtf");
-            if (elementDictionary.allElements.Count > 0) 
+            if (spellSOList.spellCheckmarks.Count > 0) 
             {
                 GUILayout.BeginHorizontal ();
-                viewIndex = Mathf.Clamp (EditorGUILayout.IntField ("Current Item", viewIndex, GUILayout.ExpandWidth(false)), 1, elementDictionary.allElements.Count);
+                viewIndex = Mathf.Clamp (EditorGUILayout.IntField ("Current Item", viewIndex, GUILayout.ExpandWidth(false)), 1, spellSOList.spellCheckmarks.Count);
                 //Mathf.Clamp (viewIndex, 1, elementDictionary.allElements.Count);
-                EditorGUILayout.LabelField ("of   " +  elementDictionary.allElements.Count.ToString() + "  items", "", GUILayout.ExpandWidth(false));
+                EditorGUILayout.LabelField ("of   " +  spellSOList.spellCheckmarks.Count.ToString() + "  items", "", GUILayout.ExpandWidth(false));
                 GUILayout.EndHorizontal ();
                 
-                elementDictionary.allElements[viewIndex-1].elementName = EditorGUILayout.TextField ("Element Name", elementDictionary.allElements[viewIndex-1].elementName as string);
-                elementDictionary.allElements[viewIndex-1].icon = EditorGUILayout.ObjectField ("Element Icon", elementDictionary.allElements[viewIndex-1].icon, typeof (Sprite), false) as Sprite;
-                elementDictionary.allElements[viewIndex-1].elementID = EditorGUILayout.IntField ("Element ID", elementDictionary.allElements[viewIndex-1].elementID, GUILayout.ExpandWidth(false));
-                elementDictionary.allElements[viewIndex-1].active = (bool)EditorGUILayout.Toggle("Is Active?",elementDictionary.allElements[viewIndex-1].active,GUILayout.ExpandWidth(false));
+                spellSOList.spellCheckmarks[viewIndex-1].spellID = EditorGUILayout.IntField ("Spell ID", spellSOList.spellCheckmarks[viewIndex-1].spellID, GUILayout.ExpandWidth(false));
+                spellSOList.spellCheckmarks[viewIndex-1].isChecked = (bool)EditorGUILayout.Toggle("Is Checked?",spellSOList.spellCheckmarks[viewIndex-1].isChecked,GUILayout.ExpandWidth(false));
 
                 GUILayout.Space(10);
                 
@@ -128,12 +126,12 @@ public class ElementDictionaryEditor : EditorWindow {
             } 
             else 
             {
-                GUILayout.Label ("This Element Dictionary is Empty.");
+                GUILayout.Label ("This Spell SO List is Empty.");
             }
         }
         if (GUI.changed) 
         {
-            EditorUtility.SetDirty(elementDictionary);
+            EditorUtility.SetDirty(spellSOList);
         }
     }
     
@@ -143,25 +141,25 @@ public class ElementDictionaryEditor : EditorWindow {
         // There is No "Are you sure you want to overwrite your existing object?" if it exists.
         // This should probably get a string from the user to create a new name and pass it ...
         viewIndex = 1;
-        elementDictionary = CreateElementDictionary.Create();
-        if (elementDictionary) 
+        spellSOList = CreateSOList.Create();
+        if (spellSOList) 
         {
-            elementDictionary.allElements = new List<Element>();
-            string relPath = AssetDatabase.GetAssetPath(elementDictionary);
+            spellSOList.spellCheckmarks = new List<SpellSO>();
+            string relPath = AssetDatabase.GetAssetPath(spellSOList);
             EditorPrefs.SetString("ObjectPath", relPath);
         }
     }
     
     void OpenItemList () 
     {
-        string absPath = EditorUtility.OpenFilePanel ("Select Element Dictionary", "", "");
+        string absPath = EditorUtility.OpenFilePanel ("Select Spell SO List", "", "");
         if (absPath.StartsWith(Application.dataPath)) 
         {
             string relPath = absPath.Substring(Application.dataPath.Length - "Assets".Length);
-            elementDictionary = AssetDatabase.LoadAssetAtPath (relPath, typeof(ElementDictionary)) as ElementDictionary;
-            if (elementDictionary.allElements == null)
-                elementDictionary.allElements = new List<Element>();
-            if (elementDictionary) {
+            spellSOList = AssetDatabase.LoadAssetAtPath (relPath, typeof(SpellSOList)) as SpellSOList;
+            if (spellSOList.spellCheckmarks == null)
+                spellSOList.spellCheckmarks = new List<SpellSO>();
+            if (spellSOList) {
                 EditorPrefs.SetString("ObjectPath", relPath);
             }
         }
@@ -169,14 +167,13 @@ public class ElementDictionaryEditor : EditorWindow {
 
     void AddItem () 
     {
-        Element newItem = new Element();
-        newItem.elementName = "New Item";
-        elementDictionary.allElements.Add (newItem);
-        viewIndex = elementDictionary.allElements.Count;
+        SpellSO newItem = new SpellSO();
+        spellSOList.spellCheckmarks.Add (newItem);
+        viewIndex = spellSOList.spellCheckmarks.Count;
     }
     
     void DeleteItem (int index) 
     {
-        elementDictionary.allElements.RemoveAt (index);
+        spellSOList.spellCheckmarks.RemoveAt (index);
     }
 }
